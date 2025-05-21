@@ -33,7 +33,7 @@ export default function NewProject() {
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/projects`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, client_id: id }),
+        body: JSON.stringify({ ...formData, client_id: Number(id) }),
       });
 
       if (!response.ok) throw new Error("Failed to save project");
