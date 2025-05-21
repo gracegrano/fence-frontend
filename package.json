@@ -1,4 +1,3 @@
-
 {
   "name": "fence-frontend",
   "version": "1.0.0",
@@ -9,9 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-  "lucide-react": "^0.263.0",
-  "next": "^14.0.0",
-  "react": "^18.0.0",
-  "react-dom": "^18.0.0"
-}
+    "lucide-react": "^0.263.0",
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
 }
