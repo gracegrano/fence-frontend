@@ -44,22 +44,22 @@ export default function NewClient() {
         zip_code: ""
       });
     } else {
-      alert("Erro ao salvar cliente.");
+      alert("Error while saving client.");
     }
   };
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-6 flex justify-center items-start">
       <div className="w-full max-w-2xl bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-2xl font-bold mb-6 text-gray-800">Cadastrar Novo Cliente</h1>
+        <h1 className="text-2xl font-bold mb-6 text-gray-800">New Client Registration</h1>
         {submitted && (
           <div className="mb-4 text-green-600 font-semibold">
-            Cliente cadastrado com sucesso!
+            Client successfully created!
           </div>
         )}
         <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <FormInput
-            label="Nome completo"
+            label="Full Name"
             id="name"
             name="name"
             type="text"
@@ -68,7 +68,7 @@ export default function NewClient() {
             required
           />
           <FormInput
-            label="Empresa"
+            label="Company Name"
             id="company_name"
             name="company_name"
             type="text"
@@ -85,7 +85,7 @@ export default function NewClient() {
             required
           />
           <FormInput
-            label="Telefone"
+            label="Phone"
             id="phone"
             name="phone"
             type="tel"
@@ -94,7 +94,7 @@ export default function NewClient() {
             required
           />
           <FormInput
-            label="Endereço - Linha 1"
+            label="Address Line 1"
             id="address_line1"
             name="address_line1"
             type="text"
@@ -102,7 +102,7 @@ export default function NewClient() {
             onChange={handleChange}
           />
           <FormInput
-            label="Endereço - Linha 2"
+            label="Address Line 2"
             id="address_line2"
             name="address_line2"
             type="text"
@@ -110,7 +110,7 @@ export default function NewClient() {
             onChange={handleChange}
           />
           <FormInput
-            label="Cidade"
+            label="City"
             id="city"
             name="city"
             type="text"
@@ -119,7 +119,7 @@ export default function NewClient() {
             required
           />
           <FormInput
-            label="Estado"
+            label="State"
             id="state"
             name="state"
             type="text"
@@ -141,7 +141,7 @@ export default function NewClient() {
               type="submit"
               className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
             >
-              Salvar Cliente
+              Save Client
             </button>
           </div>
         </form>
